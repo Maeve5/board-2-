@@ -43,7 +43,6 @@ a {
 
 .btWrap a {
     display: inline-block;
-    /* width: 102px; */
     min-width: 80px;
     padding: 10px;
     margin-left: 10px;
