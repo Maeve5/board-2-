@@ -1,36 +1,39 @@
-import setValueChange from './dd';
 
-window.addEventListener("load",
-    function (e){
+
+
+// window.addEventListener("load",
+    // function (e){
        
-        let vNum = document.getElementById('vNum').value;
-        let vTitle = document.getElementById('vTitle').value;
-        let vWriter = document.getElementById('vWriter').value;
-        let vDate = document.getElementById('vDate').value;
-        let vCount = document.getElementById('vCount').value;
-        let vCont = document.getElementById('vCont').value;
+        let vNum = document.querySelector('#vNum');
+        let vTitle = document.querySelector('#vTitle');
+        let vWriter = document.querySelector('#vWriter');
+        let vDate = document.querySelector('#vDate');
+        let vCount = document.querySelector('#vCount');
+        let vCont = document.querySelector('#vCont');
         
-        this.document.addEventListener("DOMContentLoaded",
-            function (e){
-                const getStorage = JSON.parse(localStorage.getItem('storage'));
+        // this.document.addEventListener("DOMContentLoaded",
+            // function (e){
+        const getStorage = JSON.parse(localStorage.getItem('setStorage'));
 
-                vNum = getStorage.Num;
-                vTitle = getStorage.Title;
-                vWriter = getStorage.Writer;
-                vDate = getStorage.Date;
-                vCount = getStorage.Count;
-                vCont = getStorage.Cont;
-                
-                console.log(vNum);
-                console.log(vTitle);
-                console.log(vWriter);
-                console.log(vDate);
-                console.log(vCount);
-                console.log(vCont);
-            }
-        )
-    }
-)
+
+        let v_Num = getStorage.Num;
+        let v_Title = getStorage.Title;
+        let v_Writer = getStorage.Writer;
+        let v_Date = getStorage.Date;
+        let v_Count = getStorage.Count;
+        let v_Cont = getStorage.Cont;
+        
+        vNum.textContent = v_Num;
+        vTitle.textContent = v_Title;
+        vWriter.textContent = v_Writer;
+        vDate.textContent = v_Date;
+        vCount.textContent = v_Count;
+        vCont.textContent = v_Cont;
+
+            // }
+        // )
+    // }
+// )
 
 // function setValue(){
 //     let vNum = document.querySelector("#vNum");

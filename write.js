@@ -28,7 +28,6 @@
 
 
 
-export default function setValueChange();
 
 function setValueChange(){
     
@@ -53,13 +52,18 @@ function setValueChange(){
         Writer:writer,
         Date:date,
         Count:count,
-        Cont:cont
+        Cont:cont,
+        Password:password
     };
     
-    localStorage.setItem("storage", JSON.stringify(storage));
+    // const setStorage = document.querySelector('a');
+    // setStorage.addEventListener('load', () => {
+    localStorage.setItem("setStorage", JSON.stringify(storage));
+    // })
 }
     
-    // const numV = getStorage[Object.keys(getStorage)[0]];
+// export default setValueChange
+// const numV = getStorage[Object.keys(getStorage)[0]];
     // const titleV = getStorage[Object.keys(getStorage)[1]];
     // const writerV = getStorage[Object.keys(getStorage)[2]];
     // const dateV = getStorage[Object.keys(getStorage)[3]];
@@ -74,8 +78,8 @@ function setValueChange(){
     // vCont.textContent = contV;
 
 // window.addEventListener('_self', function setValueChange(){
-//     document.querySelector('#vTitle').textContent = vTitle;
-
+    //     document.querySelector('#vTitle').textContent = vTitle;
+    
 // })
 
 // const addData = () => {
@@ -84,7 +88,7 @@ function setValueChange(){
     //     localStorage.setItem("storage", JSON.stringify(notice));
     // }
 
-
+    
     // 수정코드
 
     // const editKey = document.getElementById();
